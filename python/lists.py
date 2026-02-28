@@ -1,6 +1,14 @@
 N = int(input())
-arr = [1,2,3]
-arr.append(N)
-arr.append([1,2])
-arr.append([1,3,2])
+arr = []
+arr.insert(0,5)
+arr.insert(1,10)
+arr.insert(0,6)
+print(arr)
+arr.remove(6)
+arr.append(9)
+arr.append(1)
+arr.sort()
+print(arr)
+arr.pop()
+arr.sort(reverse=True)
 print(arr)
