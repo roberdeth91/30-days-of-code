@@ -6,7 +6,7 @@ val = 0
 print (arr)
 
 for i in arr:
-    val = arr[i]
+    val = i
     if val > maxi:
         maxi = val
 
