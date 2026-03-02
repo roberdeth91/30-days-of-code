@@ -8,14 +8,14 @@ for i in arr:
     if i > maxi : 
         maxi = i
         c += 1
-        print(maxi, secMaxi)
+        print("loop 1:",maxi, secMaxi)
     elif maxi > i and c != 0 :
         secMaxi = maxi
         maxi = i
-        print(maxi, secMaxi)
+        print("loop2",maxi, secMaxi)
     elif i < maxi and i > secMaxi :
         secMaxi = i
-        print(maxi, secMaxi)
+        print("loop3",maxi, secMaxi)
 
 
 print(secMaxi)
