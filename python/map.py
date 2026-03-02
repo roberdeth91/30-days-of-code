@@ -1,7 +1,7 @@
 n = int(input())
 arr = map(int, input().split())
-maxi = 0
-secMaxi = 0
+maxi = -1000
+secMaxi = -1000
 c=0
 
 for i in arr:
