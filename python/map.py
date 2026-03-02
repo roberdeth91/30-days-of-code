@@ -5,8 +5,9 @@ secMaxi = 0
 c=0
 
 for i in arr:
-    if i > maxi and c != 0:
+    if i > maxi and c != 0 :
         secMaxi = maxi
+        maxi = i
         print("entro 1;",secMaxi,  i)
     elif i > maxi :
         maxi = i
