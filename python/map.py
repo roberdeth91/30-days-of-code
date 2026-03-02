@@ -11,7 +11,7 @@ for i in arr:
         secMaxi = maxi
         print("entro 1;",secMaxi,  i)
     elif i > maxi :
-        maxi = val
+        maxi = i
         c += 1
         print("entro 2:",maxi, i )
 
