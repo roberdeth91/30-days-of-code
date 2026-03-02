@@ -13,6 +13,8 @@ for i in arr:
         maxi = i
         c += 1
         print("entro 2:",maxi, i )
+    elif i > secMaxi:
+        secMaxi = i
 
 print(maxi)
 print(secMaxi)
