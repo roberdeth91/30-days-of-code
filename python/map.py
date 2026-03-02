@@ -5,17 +5,15 @@ secMaxi = 0
 c=0
 
 for i in arr:
-    if maxi > i and c != 0 :
+    if  i > maxi :
         secMaxi = maxi
         maxi = i
-        print("loop2",maxi, secMaxi)
-    elif i < maxi and i > secMaxi :
+        print("loop1",maxi, secMaxi)
+    elif secMaxi < i and i < maxi :
         secMaxi = i
-        print("loop3",maxi, secMaxi)
-    elif i > maxi :
-        maxi = input
-        c += 1
-        print("loop 0:",maxi, secMaxi)
+        print("loop2",maxi, secMaxi)
+    elif i == maxi :
+        print("loop 3:",maxi, secMaxi)
 
 print(secMaxi)
 
