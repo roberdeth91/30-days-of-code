@@ -7,14 +7,13 @@ print (arr)
 c=0
 
 for i in arr:
-    val = i
-    if val > maxi and c != 0:
+    if i > maxi and c != 0:
         secMaxi = maxi
-        print("entro 1")
-    elif val > maxi :
+        print("entro 1;",secMaxi,  i)
+    elif i > maxi :
         maxi = val
         c += 1
-        print("entro 2")
+        print("entro 2:",maxi, i )
 
 print(maxi)
 print(secMaxi)
