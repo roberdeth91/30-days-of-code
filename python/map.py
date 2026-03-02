@@ -7,8 +7,11 @@ print (arr)
 
 for i in arr:
     val = i
-    if val > maxi:
+    if val > maxi and c != 0:
+        secMaxi = maxi
+    elif val > maxi :
         maxi = val
-
 print(maxi)
+print(secMaxi)
+
 
