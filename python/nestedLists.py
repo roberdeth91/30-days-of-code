@@ -8,4 +8,7 @@ for i in range(int(input())):
     
 students.sort(key=lambda x: x[1], reverse=False)
 print(students[1][0])
-print(students)
+
+for name,score in students :
+    if score[1] == score :
+        print(name)
