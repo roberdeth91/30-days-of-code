@@ -1,16 +1,17 @@
+if __name__ == '__main__':
+    students = []
 
-students = []
+    for _ in range(int(input())):
+        name = input().strip()
+        score = float(input())
+        students.append([name, score])
 
-for i in range(int(input())):
-    name = input()
-    score = float(input())
-    students.append ([name , score])
-    
-students.sort(key=lambda x: x[1], reverse=False)
-#print(students[1][0])
+    scores = sorted(set(s[1] for s in students))
+    second_lowest = scores[1]
 
-second_lowest = students[1][1]
+    names = sorted(s[0] for s in students if s[1] == second_lowest)
 
-for name,score in students :
-    if score == second_lowest :
-        print(name)
+    for n in names:
+        print(n)
+
+
