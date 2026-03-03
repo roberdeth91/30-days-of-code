@@ -1,9 +1,9 @@
 
 students = []
 
-for _ in range(int(input())):
+for i in range(int(input())):
     name = input()
     score = float(input())
-    student.apprend ([name , score])
+    students.append ([name , score])
     
 print(students)
