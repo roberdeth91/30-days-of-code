@@ -12,8 +12,6 @@ query_name = input()
 for name, scores in student_marks.items() :
     if name == query_name :
         for i in scores:
-            print (i)
             suma = suma + i
-            print(suma)
         print(suma/3)
 
