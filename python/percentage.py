@@ -7,6 +7,9 @@ for _ in range(n):
     student_marks[name] = scores
 query_name = input()
 
-for name, scores in student_marks :
-    if query_name == name :
+
+print(student_marks)
+
+for name, scores in student_marks.items() :
+    if name == query_name :
         print(scores)
